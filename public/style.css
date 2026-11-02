@@ -1,0 +1,268 @@
+*{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(141, 141, 247);
+}
+
+.logo{
+    font-size: 28px;
+    padding: 10px;
+}
+
+.logo span{
+    color: rgb(122, 214, 183);
+    font-weight: lighter;
+    font-style: italic;
+}
+
+header ul li{
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+header ul li  a{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header ul li:hover{
+    background-color: rgb(230, 84, 230);
+    border-radius: 10px ;
+    transition: all .5s ease-in-out;
+}
+
+header ul li:hover a{
+    color: rgb(109, 187, 187);
+    font-weight:900;
+}
+
+header button{
+    background-color:rgb(228, 223, 218);
+    border: none;
+    padding: 10px 20px;
+    color: rgb(198, 178, 216);
+}
+
+header ul li:hover button  {
+    color: white;
+    font-weight: 800;
+}
+
+.join .btn2,
+.join .btn1{
+    background-color: rgb(89, 89, 223);
+    color: white;
+    padding: 10px 20px;
+}
+.non {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: rgb(32, 36, 36);
+}
+
+.noncontent {
+    background-color:transparent;
+    width: 500px ;
+    text-align: center;
+    padding: 1000px  ;
+    color: white;
+}
+.noncontent h4{
+    font-size: 20px;
+    color: blue;
+    padding: 10px;
+
+}
+.noncontent h1{
+    font-size: 30px ;
+    color: white;
+    padding: 15px;
+}
+.noncontent {
+    font-size: 15px;
+    color: white;
+    padding: 10px ;
+}
+.noncontent p{
+    padding: 10px;
+}
+.btns button{
+    padding: 10px 20px;
+    border: none;
+    font-size:12px ;
+    border-radius: 10px;
+}
+.btns button:nth-child(1){
+    background-color: rgb(48, 44, 247);
+    color: white;
+    font-weight: 400;
+    
+}
+.btns button:nth-child(2){
+    background-color: rgb(185, 129, 236);
+    color: rgb(219, 212, 212);
+    font-weight: 400;
+    border: 1px solid rgb(7, 7, 112);
+}
+.mainbox {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.boxes{
+    background-color: white;
+    padding: 10px 20px;
+    margin: 20px 10PX;
+    width: 300px;
+    color: black;
+}
+.boxes .icon{
+    background-color: brown;
+    padding: 5px;
+    margin: 0px 100px;
+}
+.boxes h3{
+    font-size: 22px;
+    padding: 10px;
+}
+
+.boxes .line{
+    border: 2px solid red;
+    margin: 5px 15px;
+    width: 100px;
+}
+.boxes p{
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+@media (min-width: 320px) and (max-width480px) {
+    header{
+        display: block;
+    }
+    header ul li {
+        display: block;
+    }
+    .menus {
+        padding: 10px 20px;
+    }
+    .join button{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+
+    
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 35px;
+    }
+
+    .menus ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .menus ul li {
+        list-style: none;
+    }
+
+    .join ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    
+    .non {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .noncontent {
+        width: 100%;
+        text-align: center;
+    }
+
+    .noncontent h4 {
+        font-size: 20px;
+    }
+
+    .noncontent h1 {
+        font-size: 25px;
+    }
+
+    .noncontent p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .mainbox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 30px auto;
+    }
+
+    .boxes {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .boxes h3 {
+        font-size: 20px;
+    }
+
+    .boxes p {
+        font-size: 14px;
+    }
+
+}
